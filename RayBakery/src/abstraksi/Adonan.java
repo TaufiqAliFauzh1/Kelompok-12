@@ -12,5 +12,15 @@ package abstraksi;
  */
 
 public abstract class Adonan {
+  public double beratTepungPSN;
+  public double beratGulaPSN; 
+  public double beratButterPSN;
+  public double beratRagiPSN;
+  public double beratSusuBubukPSN;
+  public double beratSusuCairPSN;
+  public double beratTelurPSN;
+  public double beratEsBatuPSN;
+
+  public int totalPesanan;
 
 }
