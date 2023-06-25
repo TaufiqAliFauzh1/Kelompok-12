@@ -24,5 +24,14 @@ public class RotiManis extends abstraksi.Adonan{
     this.beratSusuCairPSN=(250/jumlahRotiPerAdonan)*totalPesanan;
     this.beratTelurPSN=(80/jumlahRotiPerAdonan)*totalPesanan;
     this.beratEsBatuPSN=(400/jumlahRotiPerAdonan)*totalPesanan;
+
+    System.out.println("Berat Tepung: "+beratTepungPSN+" gr");
+    System.out.println("Berat Gula: "+beratGulaPSN+" gr");
+    System.out.println("Berat Butter: "+beratButterPSN+" gr");
+    System.out.println("Berat Ragi: "+beratRagiPSN+" gr");
+    System.out.println("Berat Susu Bubuk: "+beratSusuBubukPSN+" gr");
+    System.out.println("Berat Susu Cair: "+beratSusuCairPSN+" gr");
+    System.out.println("Berat Telur: "+beratTelurPSN+" gr");
+    System.out.println("Berat Es Batu: "+beratEsBatuPSN+" gr");    
     }
 }
