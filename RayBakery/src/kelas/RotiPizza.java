@@ -13,9 +13,8 @@ import interfaces.Topping;
  *
  * @author Leo
  */
-
 public class RotiPizza extends abstraksi.Adonan implements Topping{
-  
+
     int beratKejuTopping=30;
     double beratKejuToppingPSN;
     
@@ -32,14 +31,14 @@ public class RotiPizza extends abstraksi.Adonan implements Topping{
     @Override
     public void hitungBeratBahan() {
         double jumlahRotiPerAdonan= 1950/190;
-        this.beratTepungPSN=(1000/jumlahRotiPerAdonan)*jumlahPesanan;
-        this.beratGulaPSN=(100/jumlahRotiPerAdonan)*jumlahPesanan; 
-        this.beratButterPSN=(100/jumlahRotiPerAdonan)*jumlahPesanan;
-        this.beratRagiPSN=(20/jumlahRotiPerAdonan)*jumlahPesanan;
-        this.beratSusuBubukPSN=(200/jumlahRotiPerAdonan)*jumlahPesanan;
-        this.beratSusuCairPSN=(180/jumlahRotiPerAdonan)*jumlahPesanan;
-        this.beratTelurPSN=(50/jumlahRotiPerAdonan)*jumlahPesanan;
-        this.beratEsBatuPSN=(300/jumlahRotiPerAdonan)*jumlahPesanan;
+        this.beratTepungPSN=(1000/jumlahRotiPerAdonan)*totalPesanan;
+        this.beratGulaPSN=(100/jumlahRotiPerAdonan)*totalPesanan; 
+        this.beratButterPSN=(100/jumlahRotiPerAdonan)*totalPesanan;
+        this.beratRagiPSN=(20/jumlahRotiPerAdonan)*totalPesanan;
+        this.beratSusuBubukPSN=(200/jumlahRotiPerAdonan)*totalPesanan;
+        this.beratSusuCairPSN=(180/jumlahRotiPerAdonan)*totalPesanan;
+        this.beratTelurPSN=(50/jumlahRotiPerAdonan)*totalPesanan;
+        this.beratEsBatuPSN=(300/jumlahRotiPerAdonan)*totalPesanan;
         
         System.out.println("Berat Tepung: "+beratTepungPSN+" gr");
         System.out.println("Berat Gula: "+beratGulaPSN+" gr");
@@ -53,10 +52,10 @@ public class RotiPizza extends abstraksi.Adonan implements Topping{
     
     @Override
     public void hitungBeratTopping() {
-        this.beratKejuToppingPSN=this.beratKejuTopping*jumlahPesanan;
-        this.beratSosisToppingPSN=this.beratSosisTopping*jumlahPesanan;
-        this.beratSmokedBeefToppingPSN=this.beratSmokedBeefTopping*jumlahPesanan;
-        this.beratBawangBombayToppingPSN=this.beratBawangBombayTopping*jumlahPesanan;
+        this.beratKejuToppingPSN=this.beratKejuTopping*totalPesanan;
+        this.beratSosisToppingPSN=this.beratSosisTopping*totalPesanan;
+        this.beratSmokedBeefToppingPSN=this.beratSmokedBeefTopping*totalPesanan;
+        this.beratBawangBombayToppingPSN=this.beratBawangBombayTopping*totalPesanan;
         
         System.out.println("Berat Topping Keju: "+beratKejuToppingPSN+" gr");
         System.out.println("Berat Topping Sosis: "+beratSosisToppingPSN+" gr");
@@ -76,7 +75,7 @@ public class RotiPizza extends abstraksi.Adonan implements Topping{
     
      public void tampilkan(){
         System.out.println("Roti Pizza Varian");
-        System.out.println("Jumlah: "+jumlahPesanan+" pcs \n");
+        System.out.println("Jumlah: "+totalPesanan+" pcs \n");
         hitungBeratBahan();
         hitungBeratTopping();
         System.out.println("-------------------");
@@ -84,9 +83,7 @@ public class RotiPizza extends abstraksi.Adonan implements Topping{
         System.out.println("Harga Topping: Rp"+hitungHargaTopping());
         
         double hargaJual= hitungHargaBahan()+hitungHargaTopping()+((hitungHargaBahan()+hitungHargaTopping())*(10/100));
-        System.out.println("Harga Jual Per pcs: Rp"+hargaJual/jumlahPesanan);
+        System.out.println("Harga Jual Per pcs: Rp"+hargaJual/totalPesanan);
         System.out.println("\n \n");
     }
-
-
 }
