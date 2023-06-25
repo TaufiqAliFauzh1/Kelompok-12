@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-//  Taufiq membuat kelas abstrak adonan dan jumlah pesanan, serta menghitung berat bahan
+//  Taufiq membuat kelas abstrak adonan dan jumlah pesanan, serta menghitung harga bahan
 package abstraksi;
 
 /**
