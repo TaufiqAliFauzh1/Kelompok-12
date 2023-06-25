@@ -12,5 +12,6 @@ package interfaces;
  */
 
 public interface Filling{
-
+  public void hitungBeratFilling();
+  public double hitungHargaFilling();
 }
