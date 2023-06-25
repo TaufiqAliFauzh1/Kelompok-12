@@ -11,5 +11,6 @@ package interfaces;
  * @author Taufiq
  */
 public interface Topping {
-  
+  public void hitungBeratTopping();
+  public double hitungHargaTopping();
 }
