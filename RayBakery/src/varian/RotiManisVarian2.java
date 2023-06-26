@@ -16,7 +16,7 @@ package varian;
 //extend dari kelas Roti manis
 public class RotiManisVarian2 extends kelas.RotiManis implements Filling, Topping{
     
-     public void tampilkan(){
+     public void tampilkan(){p
          
     } 
 }
