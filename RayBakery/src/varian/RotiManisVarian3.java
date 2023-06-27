@@ -19,7 +19,7 @@ public class RotiManisVarian3 extends kelas.RotiManis implements Filling{
     int beratSosis = 10;
     double beratSosisPSN;
 
-    @override
+    @Override
     public void hitungBeratFilling(){
         this.beratKejuPSN = this.beratKeju*totalPesanan;
         this.beratSosisPSN = this.beratSosis*totalPesanan;
@@ -28,7 +28,7 @@ public class RotiManisVarian3 extends kelas.RotiManis implements Filling{
         System.out.println("Berat Filling Sosis: "+ beratSosisPSN +" gr");
     }
     
-    @override
+    @Override
     public double hitungHargaFilling(){
         double hargaSosis = (31000/250)*beratSosisPSN;
         double hargaKeju = (29000/500)*beratKejuPSN;
