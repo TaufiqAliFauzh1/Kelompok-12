@@ -7,6 +7,7 @@
 //Raditya membuat perhitungan berat filling, harga filling
 package varian;
 
+import interfaces.Filling;
 
 /**
  *
