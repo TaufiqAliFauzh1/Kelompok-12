@@ -71,4 +71,3 @@ public class RotiManisVarian1 extends kelas.RotiManis implements Filling, Toppin
     }
     
 }
-}
