@@ -36,7 +36,5 @@ public abstract class Adonan {
        
     double hargaBahan=hargaTepung+hargaGula+hargaButter+hargaRagi+hargaSusuBubuk+hargaSusuCair+hargaTelur+hargaEsBatu;
     return hargaBahan;
-    
-    Ngetes
     }
 }
