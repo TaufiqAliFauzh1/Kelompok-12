@@ -13,7 +13,19 @@ package varian;
  * @author Raditya
  */
 public class RotiManisVarian3 extends kelas.RotiManis implements Filling{
-    
+    int beratkeju = 10;
+    double beratKejuPSN;
+
+    int beratSosis = 10;
+    double beratSosisPSN;
+
+    @override
+    public void hitungBeratFilling() {
+        this.beratKejuPSN = this.beratKeju*totalPesanan;
+        this.beratSosisPSN = this.beratSosis*totalPesanan;
+
+        System.out.println("Berat Filling Keju: "+ beratKejuPSN +" gr")
+        System.out.println("Berat Filling Sosis: "+ beratSosisPSN +" gr")
 }
 
     
