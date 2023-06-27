@@ -17,14 +17,14 @@ public class RotiTawarVarian2 extends kelas.RotiTawar implements Filling{
     int beratKeju = 80;
     double beratKejuPSN;
     
-    @override
+    @Override
     public void hitungBeratFilling(){
         this.beratKejuPSN = this.beratKeju*totalPesanan;
 
         System.out.println("Berat Keju: "+ beratKejuPSN +" gr");
     }    
     
-    @override
+    @Override
     public double hitungHargaFilling(){
         double hargaKeju = (31000/250)*beratKejuPSN;
         return hargaKeju;
