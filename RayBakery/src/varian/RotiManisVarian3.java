@@ -13,7 +13,7 @@ package varian;
  * @author Raditya
  */
 public class RotiManisVarian3 extends kelas.RotiManis implements Filling{
-    int beratkeju = 10;
+    int beratKeju = 10;
     double beratKejuPSN;
 
     int beratSosis = 10;
@@ -24,8 +24,8 @@ public class RotiManisVarian3 extends kelas.RotiManis implements Filling{
         this.beratKejuPSN = this.beratKeju*totalPesanan;
         this.beratSosisPSN = this.beratSosis*totalPesanan;
 
-        System.out.println("Berat Filling Keju: "+ beratKejuPSN +" gr")
-        System.out.println("Berat Filling Sosis: "+ beratSosisPSN +" gr")
+        System.out.println("Berat Filling Keju: "+ beratKejuPSN +" gr");
+        System.out.println("Berat Filling Sosis: "+ beratSosisPSN +" gr");
     }
     
     @override
@@ -45,7 +45,7 @@ public class RotiManisVarian3 extends kelas.RotiManis implements Filling{
         System.out.println("Harga Bahan: Rp"+hitungHargaBahan());
         System.out.println("Harga Filling: Rp"+hitungHargaFilling());
         double hargaJual= hitungHargaBahan()+hitungHargaFilling()+((hitungHargaBahan()+hitungHargaFilling())*(50/100));
-        System.out.println("Harga Jual Per pcs: Rp"+hargaJual/totalPesanan);
+        System.out.println("Harga Jual Per pcs: Rp "+ hargaJual/totalPesanan);
         System.out.println("\n \n");
     }
 }
