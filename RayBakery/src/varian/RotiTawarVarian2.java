@@ -23,4 +23,22 @@ public class RotiTawarVarian2 extends kelas.RotiTawar implements Filling{
 
         System.out.println("Berat Keju: "+ beratKejuPSN +" gr")
     }    
+    @override
+    public double hitungHargaFilling(){
+        double hargaKeju = (31000/250)*beratKejuPSN;
+        return hargaKeju;
+    }
+
+    public void tampilkan(){
+        System.out.println("Roti Tawar Varian 2");
+        System.out.println("Jumlah: "+ total pesanan+" pcs\n");
+        hitungBeratBahan();
+        hitungBeratFilling();
+        System.out.println("-------------------------")
+        System.out.println("Harga Bahan: Rp "+hitungBahanHarga());
+        System.out.println("Harga Filling: Rp"+hitungHargaFilling()):;
+        double hargaJual= hitungHargaBahan()+hitungHargaFilling()+((hitungHargaBahan()+hitungHargaFilling())*(50/100));
+        System.out.println("Harga Jual Per pcs: Rp" +hargaJual/totalPesanan);
+        System.out.println("\n \n")
+    }   
 }
