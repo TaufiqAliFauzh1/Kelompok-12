@@ -65,7 +65,7 @@ public class RotiManisVarian1 extends kelas.RotiManis implements Filling, Toppin
         System.out.println("Harga Filling: Rp"+hitungHargaFilling());
         System.out.println("Harga Topping: Rp"+hitungHargaTopping());
         
-        double hargaJual= hitungHargaBahan()+hitungHargaFilling()+hitungHargaTopping()+((hitungHargaBahan()+hitungHargaFilling()+hitungHargaTopping())*(50/100));
+        double hargaJual= hitungHargaBahan()+hitungHargaFilling()+hitungHargaTopping()+((hitungHargaBahan()+hitungHargaFilling()+hitungHargaTopping())*(40/100));
         System.out.println("Harga Jual Per pcs: Rp"+hargaJual/totalPesanan);
         System.out.println("\n \n");
     }
