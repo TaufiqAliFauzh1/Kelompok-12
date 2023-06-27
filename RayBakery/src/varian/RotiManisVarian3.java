@@ -44,7 +44,7 @@ public class RotiManisVarian3 extends kelas.RotiManis implements Filling{
         System.out.println("-------------------");
         System.out.println("Harga Bahan: Rp"+hitungHargaBahan());
         System.out.println("Harga Filling: Rp"+hitungHargaFilling());
-        double hargaJual= hitungHargaBahan()+hitungHargaFilling()+((hitungHargaBahan()+hitungHargaFilling())*(50/100));
+        double hargaJual= hitungHargaBahan()+hitungHargaFilling()+((hitungHargaBahan()+hitungHargaFilling())*(40/100));
         System.out.println("Harga Jual Per pcs: Rp "+ hargaJual/totalPesanan);
         System.out.println("\n \n");
     }
