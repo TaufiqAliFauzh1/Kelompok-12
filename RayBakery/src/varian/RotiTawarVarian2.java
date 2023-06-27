@@ -13,8 +13,14 @@ import interfaces.Filling;
  * @author Raditya
  */
 public class RotiTawarVarian2 extends kelas.RotiTawar implements Filling{
+
+    int beratKeju = 80;
+    double beratKejuPSN;
     
-    public void tampilkan(){
-        
-    }  
+    @override
+    public double hitungHargaFilling(){
+        this.beratKejuPSN = this.beratKeju*totalPesanan;
+
+        System.out.println("Berat Keju: "+ beratKejuPSN +" gr")
+    }    
 }
